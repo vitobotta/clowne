@@ -7,7 +7,7 @@ module Clowne
         operation = Clowne::Utils::Operation.current
         operation.add_after_clone(
           proc do
-            declaration.block.call(source, record, params)
+            declaration.block.call(source, record, **params)
           end
         )
         record

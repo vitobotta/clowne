@@ -5,10 +5,10 @@ module Clowne
     class AfterPersist < Base # :nodoc: all
       attr_reader :block
 
-      def initialize
+      def initialize(&block)
         raise ArgumentError, "Block is required for after_persist" unless block_given?
 
-        @block = Proc.new
+        @block = block
       end
 
       def compile(plan)

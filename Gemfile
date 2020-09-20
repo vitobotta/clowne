@@ -5,12 +5,12 @@ gemspec
 
 gem "pry-byebug", platform: :mri
 
-gem "sqlite3", "~> 1.4.1", platform: :ruby
-gem "activerecord-jdbcsqlite3-adapter", "~> 50.0", platform: :jruby
+gem "sqlite3", "~> 1.4.2", platform: :ruby
+gem "activerecord-jdbcsqlite3-adapter", "~> 51.0", platform: :jruby
 gem "jdbc-sqlite3", platform: :jruby
 
-gem "activerecord", "~> 5.2"
-gem "sequel", ">= 5.0"
+gem "activerecord", "~> 6.0"
+gem "sequel", ">= 5.36"
 gem "simplecov"
 
 local_gemfile = "Gemfile.local"
